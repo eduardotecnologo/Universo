@@ -29,7 +29,7 @@
         if(time > 300){
              price1 = time / 60;
              price_end1 = price1*1.90;
-             price2 = price1 - 5;
+             price2 = price1 - 5 / 100;
              price_end2 = (price2*1.90)*5 /100;
              price_end3 = price_end1 - price_end2;
              printf(" \n\nTotal a pagar: %.2f", price_end3);
@@ -46,7 +46,7 @@
             if(time > 300){
                  price1 = time / 60;
                  price_end1 = price1*2.00;
-                 price2 = price1 - 5;
+                 price2 = price1 - 5 / 100;
                  price_end2 = (price2*2.00)*5 /100;
                  price_end3 = price_end1 - price_end2;
                  printf(" \n\nPreço a pagar pela ligacão e: %.2f", price_end3);
@@ -54,34 +54,35 @@
             else{
                price1 = time / 60;
                price_end1 = price1*2.00;
-               printf(" \n\nPreço a pagar pela ligacão e: %f", price_end1);
+               printf(" \n\nPreço a pagar pela ligacão e: %.2f", price_end1);
             }
         }
         else{
+            //Prefixos (1) Canadá - Estados Unidos
             if(pref == 1){
-                 printf("\nDuração da chamada em segundos? ");
-                 scanf("%d", &time);
+                     printf("\nDuração da chamada em segundos? ");
+                     scanf("%d", &time);
                 if(time > 300){
                      price1 = time / 60;
                      price_end1 = price1*2.10;
-                     price2 = price1 - 5;
+                     price2 = price1 - 5 / 100;
                      price_end2 = (price2*2.10)*5 /100;
                      price_end3 = price_end1 - price_end2;
                      printf(" \n\nPreço a pagar pela ligacão é:  %.2f", price_end3);
                 }
                 else{
-                   price1 = time / 60;
-                   price_end1 = price1*2.10;
-                   printf(" \n\nPreço a pagar pela ligacão é: %.2f", price_end1);
+                     price1 = time / 60;
+                     price_end1 = price1*2.10;
+                     printf(" \n\nPreço a pagar pela ligacão é: %.2f", price_end1);
                 }
             }
             else{
-                     printf("\nDuração da chamada? ");
+                     printf("\nDuração da chamada em segundos? ");
                      scanf("%d", &time);
                 if(time > 300){
                      price1 = time / 60;
                      price_end1 = price1*2.30;
-                     price2 = price1 - 5;
+                     price2 = price1 - 5 / 100;
                      price_end2 = (price2*2.30)*5 /100;
                      price_end3 = price_end1 - price_end2;
                      printf(" \n\nPreço a pagar pela ligacão é: %.2f", price_end3);
