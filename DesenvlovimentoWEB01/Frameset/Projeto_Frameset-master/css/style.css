@@ -1,6 +1,9 @@
-*{
-	margin: 0;
-	padding: 0;
+html, body, span, p, form, img, a, ul, ol, li, table, tr, td, div{
+margin: 0;
+padding: 0; 
+border:none; 
+outline:none;
+list-style-type:none;
 }
 p{
 	text-align: justify;
@@ -22,7 +25,7 @@ table#tabela td{
  /*jQuery lightBox plugin - Gallery style */
 #gallery{
 	background-color: #fff;
-	padding: 10px;
+	padding: 5px;
 	width: auto;
 }
 #gallery ul { 
@@ -33,7 +36,7 @@ table#tabela td{
 }
 #gallery ul img {
 	border: 5px solid #444444;
-	border-width: 5px 5px 20px;
+	border-width: 5px 5px 5px;
 }
 #gallery ul a:hover img {
 	border: 5px solid #fff;
@@ -46,14 +49,14 @@ table#tabela td{
 .imageRow .singlefirst{
 	float: left;
 	margin-top: 30px;
-    margin-right: 100px;
+    margin-right: 20px;
     margin-bottom: 10px;
-    margin-left: 100px;
+    margin-left: 50px;
 }
 .imageRow .single{
 	float: left;
 	margin-top: 30px;
-    margin-right: 10px;
+    margin-right: 20px;
     margin-bottom: 10px;
     margin-left: 0px; 
 }
