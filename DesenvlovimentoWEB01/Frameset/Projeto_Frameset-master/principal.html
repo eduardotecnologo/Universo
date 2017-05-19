@@ -10,20 +10,20 @@
 <section class="section">
     <div class="container">
       <div class="heading">
-        <h1 class="title">Renault Formula One Team</h1>
-        <h2 class="subtitle">
+        <h1 class="title" style="text-align: center;">Renault Formula One Team</h1>
+        <h2 class="subtitle" style="text-align: center;">
           Em cada disciplina vemos um desafio que nos permite desenvolver nossa experiência. Nossa paixão pelo <strong>automobilismo</strong> é o que nos move continuar proporcionando inovação dia após dia., clique aqui para mais detalhes.
           <div class="tile is-parent">
         <article class="tile is-child notification is-info">
-          <p class="title">Conheça o modelo que está nas pistas em 2017</p>
+          <p class="title" style="text-align: center;">Conheça o modelo que está nas pistas em 2017</p>
           <p class="subtitle"> o R.S 17</p>
         </article>
       </div>
     </div>
         </h2>
         <!-- #region Jssor Slider Begin -->
-    <script src="js/js/jquery-1.11.3.min.js" type="text/javascript"></script>
-    <script src="js/js/jssor.slider-23.1.6.mini.js" type="text/javascript"></script>
+    <script src="/js/js/jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="/js/js/jssor.slider-23.1.6.mini.js" type="text/javascript"></script>
     <script type="text/javascript">
         jQuery(document).ready(function ($) {
 
@@ -53,7 +53,7 @@
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
-                    refSize = Math.min(refSize, 1200);
+                    refSize = Math.min(refSize, 800);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
@@ -84,7 +84,7 @@
             /* size of bullet elment */
             width: 16px;
             height: 16px;
-            background: url('img/b05.png') no-repeat;
+            background: url('js/img/b05.png') no-repeat;
             overflow: hidden;
             cursor: pointer;
         }
@@ -121,8 +121,8 @@
     </style>
     <div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:300px;overflow:hidden;visibility:hidden;">
         <!-- Loading Screen -->
-        <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('img/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
-        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:300px;overflow:hidden;">
+        <div data-u="loading" style="position:absolute;top:0px;left:0px;background:url('js/img/loading.gif') no-repeat 50% 50%;background-color:rgba(0, 0, 0, 0.7);"></div>
+        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:400px;overflow:hidden;">
             <div>
                 <img data-u="image" src="js/img/renault3.jpg" />
             </div>
@@ -132,8 +132,7 @@
             <div>
                 <img data-u="image" src="js/img/renault1.jpg" />
             </div>
-
-            <a data-u="any" href="https://www.jssor.com" style="display:none">js slider</a>
+            <a data-u="any" href="https://www.jssor.com" style="display:none"></a>
         </div>
         <!-- Bullet Navigator -->
         <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
@@ -146,8 +145,14 @@
     </div>
     <hr size="15"; width="100%";>
     <!-- #endregion Jssor Slider End -->
-    <div class="imghome1">
-    <img src="/img/imghome.jpg" alt="">
+    <div class="imghome1" align="center">
+    <img src="/img/imghome.jpg" border="0" usemap="#carro" alt="Carro">
+        <map name="carro">
+        <area shape="circle" coords="395,384,25"
+        href="http://www.renault.com.br" target="_blank" alt="Renault"><!--RODA ESQUERDA-->
+        <area shape="circle" coords="665,350,25" 
+        href="http://www.renault2.com.br" target="_blank" alt="Renault"><!--RODA DIREITA-->
+      </map>
     </div>
       </div>
     </div>
