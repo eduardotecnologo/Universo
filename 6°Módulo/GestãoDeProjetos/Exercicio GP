@@ -1,0 +1,29 @@
+Exercicio de GP
+
+Fazer um projeto de um foguete.
+
+1. Ciclo de vida / grupo de processos
+2. Termo de abertura / stakeholders
+3. Requisitos / escopo / eap
+
+Projeto -> Construção -> Testes -> Lançamento
+
+Projeto:
+	O objetivo final é a construção de um foguete que será usado para colocar um satélite em orbita na data de Dezembro de 2023. O projeto contempla a fase planjamento do foguete onde será decidido qual a estrutura do mesmo, quais materiais usar e quais as quantidades desses materiais.
+
+	Envolvidos    	|   Função   		| Expectativa
+	------------------------------------------------------
+	Emp. do Sat.  	| Investidor 		| Colocar o sat em orbita
+		      	|		        |
+	Engenheiro    	| Planejar              | Fazer o foguete voar
+		      	|		        |
+	Emp. de Lanç. 	| Prover local de lanç. | Lançar o foguete
+
+	Projetar a estrutura do foguete -> Calcular a qtd de combustivel necessário -> Calcular qtd de material para construção ->  qtd de tempo o foguete será construido.
+
+Construção:
+	Iniciar a construção do foguete que foi projetado anteriormente.
+
+	Envolvidos | Função | Expectativas
+	-------------------------------------------
+	
