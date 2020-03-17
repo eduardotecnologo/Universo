@@ -3,8 +3,12 @@
 
 int main()
 {
-  float n1, n2, n3, media;
-  scanf("%f%f%f", &n1, &n2, &n3);
-  media = (n1 + n2 + n3) / 3;
+  int i, j;
+  float x;
+  i = 1;
+  j = 2;
+  x = 3;
+  printf("%d", i);
+  printf("%d%.2f", j, x);
   return 0;
 }
