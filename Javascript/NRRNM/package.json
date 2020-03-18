@@ -1,0 +1,11 @@
+{
+  "name": "nrrnm",
+  "version": "1.0.0",
+  "description": "Estudos Nodejs, React, React Native Mongo DB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Developer",
+  "license": "MIT"
+}
