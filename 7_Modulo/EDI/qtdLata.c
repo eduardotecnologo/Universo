@@ -14,4 +14,21 @@
 int main()
 {
   float altura, raio, areaCilindro, qtdLitros, qtdLatas, custo;
+  printf("\nDigite o valor da altura do cilindro em metros:\n");
+  scanf("%f", &altura);
+  printf("\nDigite o valor do raio em metros:\n");
+  scanf("%f", &raio);
+  // Calcula a área do cilindro em metros quadrados
+  areaCilindro = 2 * 3.14 * raio * raio + 2 * 3.14 * raio * altura;
+  printf("\nA area do cilindro é %.2f metros quadrados", areaCilindro);
+  // Calcula a quantidade de litros necessários
+  qtdLitros = areaCilindro / 3;
+  printf("\nA quantidade de litros necessária é de %.2f", qtdLitros);
+  // Calcula a quantidade de latas necessárias
+  qtdLatas = qtdLitros / 5;
+  printf("\nA quantidade de latas necessárias é de %.2f", qtdLatas);
+  //Calcula o valor total de tintas
+  custo = qtdLatas * 20;
+  printf("\nO valor total das tintas é de R$ %.2f\n", custo);
+  return 0;
 }
