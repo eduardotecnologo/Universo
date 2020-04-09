@@ -30,3 +30,9 @@ public class Test {
 	}
 
 }
+//RESULT
+//Circulo com raio: 5.0
+//Retangulo com largura: 12.0 e comprimento: 10.0
+//Caixa com largura: 12.0, Comprimento: 5.0e altura: 6.0
+//Cilindro com raio: 5.0 e altura: 6.0
+
