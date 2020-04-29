@@ -4,9 +4,9 @@ public class Funcionario {
 	// Solução 01 - Adiconar atributo cursoSuperior
 	public String name;
 	public String cpf;
-	public String cursoSuperior;
 	
 	Funcionario(String name, String cpf){
+		System.out.println(" Construtor de Funcionário");
 		if(this.validarCpf(cpf)) {
 			this.name = name;
 			this.cpf = cpf;

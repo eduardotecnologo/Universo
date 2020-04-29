@@ -2,8 +2,8 @@ package aula;
 
 public class Analista extends Funcionario{
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	Analista(String nome,String cpf) {
+		super(nome, cpf);
 
 	}
 
