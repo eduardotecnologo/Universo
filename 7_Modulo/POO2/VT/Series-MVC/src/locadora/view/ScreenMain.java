@@ -63,10 +63,20 @@ public class ScreenMain extends javax.swing.JFrame {
 
         jMenuItemSeries.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/rsz_arrow-black-low.png"))); // NOI18N
         jMenuItemSeries.setText("Series");
+        jMenuItemSeries.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemSeriesActionPerformed(evt);
+            }
+        });
         jMenuCadastrar.add(jMenuItemSeries);
 
         jMenuItemEpsodios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/rsz_arrow-black-low.png"))); // NOI18N
         jMenuItemEpsodios.setText("Epsódios");
+        jMenuItemEpsodios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemEpsodiosActionPerformed(evt);
+            }
+        });
         jMenuCadastrar.add(jMenuItemEpsodios);
 
         jMenuItemCliente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/rsz_arrow-black-low.png"))); // NOI18N
@@ -119,11 +129,23 @@ public class ScreenMain extends javax.swing.JFrame {
 
     private void jMenuItemClienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemClienteActionPerformed
         // TODO add your handling code here:
+        new ScreenCadCliente().setVisible(true);
     }//GEN-LAST:event_jMenuItemClienteActionPerformed
 
     private void jMenuItemItemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemItemActionPerformed
         // TODO add your handling code here:
+        new ScreenItem().setVisible(true);
     }//GEN-LAST:event_jMenuItemItemActionPerformed
+
+    private void jMenuItemSeriesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSeriesActionPerformed
+        // TODO add your handling code here:
+        new ScreenSerie().setVisible(true);
+    }//GEN-LAST:event_jMenuItemSeriesActionPerformed
+
+    private void jMenuItemEpsodiosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemEpsodiosActionPerformed
+        // TODO add your handling code here:
+        new ScreenCadEpsodios().setVisible(true);
+    }//GEN-LAST:event_jMenuItemEpsodiosActionPerformed
 
     /**
      * @param args the command line arguments

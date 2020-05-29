@@ -5,6 +5,10 @@
  */
 package locadora.view;
 
+import java.awt.event.ActionEvent;
+import javax.swing.JOptionPane;
+import locadora.controller.SerieController;
+
 /**
  *
  * @author edudeveloper
@@ -36,11 +40,9 @@ public class ScreenSerie extends javax.swing.JFrame {
         jLabelGenero1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextAreaSinopse = new javax.swing.JTextArea();
-        jSpinner1 = new javax.swing.JSpinner();
+        jSpinnerDuracao = new javax.swing.JSpinner();
         jLabelDuracao = new javax.swing.JLabel();
         jButtonSalvar = new javax.swing.JButton();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jTextAreaSinopse1 = new javax.swing.JTextArea();
         jButtonConsultar = new javax.swing.JButton();
         jButtonLimpar = new javax.swing.JButton();
         jButtonCancelar = new javax.swing.JButton();
@@ -78,8 +80,8 @@ public class ScreenSerie extends javax.swing.JFrame {
         jTextAreaSinopse.setRows(5);
         jScrollPane1.setViewportView(jTextAreaSinopse);
 
-        jSpinner1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jSpinner1.setModel(new javax.swing.SpinnerNumberModel(20, 20, 400, 10));
+        jSpinnerDuracao.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jSpinnerDuracao.setModel(new javax.swing.SpinnerNumberModel(20, 20, 400, 10));
 
         jLabelDuracao.setFont(new java.awt.Font("Dialog", 1, 24)); // NOI18N
         jLabelDuracao.setForeground(new java.awt.Color(255, 255, 255));
@@ -87,18 +89,17 @@ public class ScreenSerie extends javax.swing.JFrame {
 
         jButtonSalvar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButtonSalvar.setText("Salvar");
-
-        jTextAreaSinopse1.setColumns(20);
-        jTextAreaSinopse1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jTextAreaSinopse1.setRows(5);
-        jScrollPane2.setViewportView(jTextAreaSinopse1);
+        jButtonSalvar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSalvarActionPerformed(evt);
+            }
+        });
 
         jButtonConsultar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButtonConsultar.setText("Consultar");
 
         jButtonLimpar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButtonLimpar.setText("Limpar");
-        jButtonLimpar.setActionCommand("Limpar");
 
         jButtonCancelar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButtonCancelar.setText("Cancelar");
@@ -123,7 +124,7 @@ public class ScreenSerie extends javax.swing.JFrame {
                             .addComponent(jLabelDuracao, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanelPanelSerieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jSpinnerDuracao, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(jPanelPanelSerieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                 .addGroup(jPanelPanelSerieLayout.createSequentialGroup()
                                     .addComponent(jButtonCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -134,11 +135,6 @@ public class ScreenSerie extends javax.swing.JFrame {
                                     .addComponent(jComboBoxGenero, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 592, Short.MAX_VALUE))))
                         .addGap(41, 41, 41))))
-            .addGroup(jPanelPanelSerieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(jPanelPanelSerieLayout.createSequentialGroup()
-                    .addGap(163, 163, 163)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.DEFAULT_SIZE, 592, Short.MAX_VALUE)
-                    .addGap(31, 31, 31)))
         );
         jPanelPanelSerieLayout.setVerticalGroup(
             jPanelPanelSerieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -161,7 +157,7 @@ public class ScreenSerie extends javax.swing.JFrame {
                         .addComponent(jComboBoxGenero, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE)
                 .addGroup(jPanelPanelSerieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jSpinner1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jSpinnerDuracao, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabelDuracao))
                 .addGap(41, 41, 41)
                 .addGroup(jPanelPanelSerieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -170,11 +166,6 @@ public class ScreenSerie extends javax.swing.JFrame {
                     .addComponent(jButtonLimpar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButtonCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31))
-            .addGroup(jPanelPanelSerieLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelPanelSerieLayout.createSequentialGroup()
-                    .addContainerGap(195, Short.MAX_VALUE)
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(171, 171, 171)))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -203,6 +194,27 @@ public class ScreenSerie extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButtonSalvarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalvarActionPerformed
+        // TODO add your handling code here:
+        int duracao = Integer.parseInt(jSpinnerDuracao.getValue().toString());
+        String genero = jComboBoxGenero.getSelectedItem().toString();
+        boolean sucesso;
+        
+        try{
+            SerieController serieController = new SerieController();
+            sucesso = serieController.cadastrarSeries(jTextFieldTitulo.getText(), genero, jTextAreaSinopse.getText(), duracao);
+            if(sucesso == true){
+                JOptionPane.showMessageDialog(null, "O cadastro foi efetuado com sucesso!!!");
+                this.jButtonLimpar(evt);
+            }else{
+                JOptionPane.showMessageDialog(null, "Por favor, preencha os campos corretamente!!!");
+            }
+        }catch(Exception ex){
+            JOptionPane.showMessageDialog(null, "Error:" + ex);
+        }
+        
+    }//GEN-LAST:event_jButtonSalvarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -252,10 +264,12 @@ public class ScreenSerie extends javax.swing.JFrame {
     private javax.swing.JLabel jLabelTitulo1;
     private javax.swing.JPanel jPanelPanelSerie;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JSpinner jSpinner1;
+    private javax.swing.JSpinner jSpinnerDuracao;
     private javax.swing.JTextArea jTextAreaSinopse;
-    private javax.swing.JTextArea jTextAreaSinopse1;
     private javax.swing.JTextField jTextFieldTitulo;
     // End of variables declaration//GEN-END:variables
+
+    private void jButtonLimpar(ActionEvent evt) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }
