@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "owvET1Z4iEcZUJgxNz5pZJ5npgtrVV5mITKgoS9cSbZ8exfhEiyPatKOrP/xNwgF1z7N4ELBYi1kBzpefyym8A==",
+  "dgSpecHash": "G0s3j6+zdQjNtsPS+iF9aBbMiIGFvgHcEIqnrVns1dkjG0Q1Q5gvYlP4P6bIrdZyJHElpMHKFXks4akS57xe+w==",
   "success": true,
   "projectFilePath": "/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/EntityFramework/EntityFramework.csproj",
   "expectedPackageFiles": [
@@ -38,7 +38,10 @@
     "/Users/edudeveloper/.nuget/packages/microsoft.extensions.logging.abstractions/3.1.4/microsoft.extensions.logging.abstractions.3.1.4.nupkg.sha512",
     "/Users/edudeveloper/.nuget/packages/microsoft.extensions.options/3.1.4/microsoft.extensions.options.3.1.4.nupkg.sha512",
     "/Users/edudeveloper/.nuget/packages/microsoft.extensions.primitives/3.1.4/microsoft.extensions.primitives.3.1.4.nupkg.sha512",
+    "/Users/edudeveloper/.nuget/packages/mysqlconnector/0.61.0/mysqlconnector.0.61.0.nupkg.sha512",
     "/Users/edudeveloper/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/edudeveloper/.nuget/packages/pomelo.entityframeworkcore.mysql/3.1.1/pomelo.entityframeworkcore.mysql.3.1.1.nupkg.sha512",
+    "/Users/edudeveloper/.nuget/packages/pomelo.jsonobject/2.2.1/pomelo.jsonobject.2.2.1.nupkg.sha512",
     "/Users/edudeveloper/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.0.2/sqlitepclraw.bundle_e_sqlite3.2.0.2.nupkg.sha512",
     "/Users/edudeveloper/.nuget/packages/sqlitepclraw.core/2.0.2/sqlitepclraw.core.2.0.2.nupkg.sha512",
     "/Users/edudeveloper/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.2/sqlitepclraw.lib.e_sqlite3.2.0.2.nupkg.sha512",
