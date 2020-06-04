@@ -10,12 +10,15 @@ import model.GenreSeriesModel;
  * @author edudeveloper
  */
 public class GenreSeriesDao implements IDao{
+    String sql;
 
     @Override
     public void saveDao(Object... value) {
         GenreSeriesModel gsm = (GenreSeriesModel)value[0];
-        gsm.getDescricao();
-        System.out.println("Estou no DAO" +gsm.getDescricao());
+        sql = "INSERT INTO genre_serie (descricao) VALUES (?)";
+        sql = "UPDATE genre_serie SET descricao=? WHERE id_genre_serie=?";
+        
+       
     }
 
     @Override

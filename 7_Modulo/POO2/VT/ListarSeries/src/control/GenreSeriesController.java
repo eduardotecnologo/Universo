@@ -14,7 +14,12 @@ public class GenreSeriesController implements IController{
 
     @Override
     public void saveController(Object... value) {
-      gsm.setId((int) value[0]);           // casting
+        if("".equals(value[0])){
+        gsm.setId(0);
+      }else{
+        gsm.setId((int) value[0]);           // casting
+        }
+        
       gsm.setDescricao((String) value[1]); // casting
       
       // Enviando as informações para o Banco

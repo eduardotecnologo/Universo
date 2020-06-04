@@ -1,5 +1,6 @@
 package view;
 
+import dao.ConnectDb;
 import javax.swing.JFrame;
 
 /**
