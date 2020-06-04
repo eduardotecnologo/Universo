@@ -20,9 +20,9 @@ public class Serie {
     private ArrayList<Item> items = new ArrayList<Item>();
     private ArrayList<Epsodio> epsodios = new ArrayList<Epsodio>();
 
-//    public Serie(String titulo, String genero, String sinopse, Integer duracao) {
-//        throw new UnsupportedOperationException(); //To change body of generated methods, choose Tools | Templates.
-//    }
+    public Serie(String titulo, String genero, String sinopse, Integer duracao) {
+        throw new UnsupportedOperationException(); //To change body of generated methods, choose Tools | Templates.
+    }
 
     public Integer getCodSerie() {
         return codSerie;
