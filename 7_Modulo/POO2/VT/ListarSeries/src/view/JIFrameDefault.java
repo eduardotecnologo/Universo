@@ -1,26 +1,47 @@
 package view;
 
+import javax.swing.JLabel;
+import javax.swing.JTextField;
+
 /**
  *
  * @author edudeveloper
  */
-public class JIFrameDefault extends javax.swing.JInternalFrame {
 
-    /**
-     * Creates new form JInternalFrameDefault
-     */
-    // Constructor
+// Classe abstrata
+abstract public class JIFrameDefault extends javax.swing.JInternalFrame {
+    
+    // Métodos abstratos que serão implementados pelas classes filhas
+    abstract public void initializeComponents(); // Assinatura de método
+    abstract public void saveView();
+    
+    
+    // Variáveis Componentes
+    JLabel jlConsult;
+    JTextField jTextFieldConsult;
+
+    // Método Constructor
     public JIFrameDefault() {
         initComponents();
         // Setando buttons se New
         habilitaButtons(true);
+        habilitaFields(false);
+        initializeComponents(); // Inicializando os campos de cada formulário
         
         // Desabilitando os campos ID e Descrição
         jTextFieldID.setEnabled(false);
         jTextFieldDesc.setEnabled(false);
         
-        habilitaFields(false);
+         // Componente Consulta jLabel e jTextField
+        jlConsult = new JLabel("Consultar"); // Objeto que insere o título
+        jlConsult.setBounds(30, 15, 60, 30); // Coluna, linha, largura e altura
+        jPanelConsult.add(jlConsult);        // Adicona o componente no Panel
         
+        jTextFieldConsult = new JTextField();
+        jTextFieldConsult.setBounds(100, 15, 700, 30);
+        jPanelConsult.add(jTextFieldConsult);
+        
+        habilitaFields(false);
     }
 
     @SuppressWarnings("unchecked")
@@ -202,27 +223,31 @@ public class JIFrameDefault extends javax.swing.JInternalFrame {
 
     private void jbNewActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbNewActionPerformed
         
-        habilitaButtons(false);// Setando buttons se New        
-        habilitaFields(true);// Habilitando o campo Descrição ao criar um novo
+        habilitaButtons(false);          // Setando buttons se New        
+        habilitaFields(true);            // Habilitando o campo Descrição ao criar um novo
+        cleanFields();                   // Limpando o campo
+        jTextFieldDesc.requestFocus();   // Setando o foco no campo ao abrir a tela
         
     }//GEN-LAST:event_jbNewActionPerformed
 
     private void jbUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbUpdateActionPerformed
         
-        habilitaButtons(false);// Setando buttons se Update
-        habilitaFields(true);// Habilitando o campo Descrição ao editar
+        habilitaButtons(false);          // Setando buttons se Update
+        habilitaFields(true);            // Habilitando o campo Descrição ao editar
+        jTextFieldDesc.requestFocus();   // Setando o foco no campo ao abrir a tela
     }//GEN-LAST:event_jbUpdateActionPerformed
 
     private void jbSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbSaveActionPerformed
-        
-        habilitaButtons(true);// Setando buttons se Save
-        habilitaFields(false);// Desabilita o campo Descrição ao salvar
+
+        habilitaButtons(true);           // Setando buttons se Save
+        habilitaFields(false);           // Desabilita o campo Descrição ao salvar
+        saveView();
     }//GEN-LAST:event_jbSaveActionPerformed
 
     private void jbCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbCancelActionPerformed
          
-        habilitaButtons(true);// Setando buttons se Cancel
-        habilitaFields(false);// Desabilita o campo Descrição ao Cancelar
+        habilitaButtons(true);           // Setando buttons se Cancel
+        habilitaFields(false);           // Desabilita o campo Descrição ao Cancelar
         
         
     }//GEN-LAST:event_jbCancelActionPerformed
@@ -241,14 +266,19 @@ public class JIFrameDefault extends javax.swing.JInternalFrame {
         jTextFieldDesc.setEnabled(state);
     }
     
+    // Método para limpar os campos do formulário
+    public void cleanFields(){
+        jTextFieldDesc.setText("");
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanelButton;
-    private javax.swing.JPanel jPanelConsult;
-    private javax.swing.JPanel jPanelForm;
-    private javax.swing.JTextField jTextFieldDesc;
-    private javax.swing.JTextField jTextFieldID;
+    public javax.swing.JPanel jPanelConsult;
+    public javax.swing.JPanel jPanelForm;
+    public javax.swing.JTextField jTextFieldDesc;
+    public javax.swing.JTextField jTextFieldID;
     private javax.swing.JButton jbCancel;
     private javax.swing.JButton jbClose;
     private javax.swing.JButton jbDelete;

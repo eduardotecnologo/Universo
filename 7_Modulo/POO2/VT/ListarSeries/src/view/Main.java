@@ -22,31 +22,68 @@ public class Main extends javax.swing.JFrame {
     private void initComponents() {
 
         jDesktop = new javax.swing.JDesktopPane();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
         jMenuBarMenu = new javax.swing.JMenuBar();
         jMenuArquivo = new javax.swing.JMenu();
         jMenuItemSeries = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JPopupMenu.Separator();
         jMenuCadastrar = new javax.swing.JMenu();
-        jMenuItemCadSeries = new javax.swing.JMenuItem();
+        jMenuItemCadNomeSeries = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JPopupMenu.Separator();
-        jMenuItemCadEpisodios = new javax.swing.JMenuItem();
         jSeparator3 = new javax.swing.JPopupMenu.Separator();
         jMenuItemCadGenero = new javax.swing.JMenuItem();
+        jSeparator4 = new javax.swing.JPopupMenu.Separator();
+        jMenuItemClassificacao = new javax.swing.JMenuItem();
         jMenuSobre = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Tela de Cadastro de Séries");
         setResizable(false);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/logo.png"))); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Flix");
+
+        jLabel3.setFont(new java.awt.Font("Dialog", 1, 48)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("JumpJump");
+
+        jDesktop.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktop.setLayer(jLabel2, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        jDesktop.setLayer(jLabel3, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout jDesktopLayout = new javax.swing.GroupLayout(jDesktop);
         jDesktop.setLayout(jDesktopLayout);
         jDesktopLayout.setHorizontalGroup(
             jDesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 1280, Short.MAX_VALUE)
+            .addGroup(jDesktopLayout.createSequentialGroup()
+                .addGap(179, 179, 179)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 529, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(jDesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jDesktopLayout.createSequentialGroup()
+                        .addGap(247, 247, 247)
+                        .addComponent(jLabel2))
+                    .addGroup(jDesktopLayout.createSequentialGroup()
+                        .addGap(112, 112, 112)
+                        .addComponent(jLabel3)))
+                .addContainerGap(198, Short.MAX_VALUE))
         );
         jDesktopLayout.setVerticalGroup(
             jDesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 654, Short.MAX_VALUE)
+            .addGroup(jDesktopLayout.createSequentialGroup()
+                .addGap(63, 63, 63)
+                .addGroup(jDesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel1)
+                    .addGroup(jDesktopLayout.createSequentialGroup()
+                        .addGap(49, 49, 49)
+                        .addComponent(jLabel3)
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel2)))
+                .addContainerGap(79, Short.MAX_VALUE))
         );
 
         jMenuArquivo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/arquivo/2x/baseline_addchart_black_18dp.png"))); // NOI18N
@@ -67,23 +104,39 @@ public class Main extends javax.swing.JFrame {
         jMenuCadastrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/plus/1x/sharp_queue_black_18dp.png"))); // NOI18N
         jMenuCadastrar.setText("Cadastrar");
 
-        jMenuItemCadSeries.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.META_MASK));
-        jMenuItemCadSeries.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/movie/1x/baseline_movie_black_18dp.png"))); // NOI18N
-        jMenuItemCadSeries.setMnemonic('c');
-        jMenuItemCadSeries.setText("Séries");
-        jMenuCadastrar.add(jMenuItemCadSeries);
+        jMenuItemCadNomeSeries.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_C, java.awt.event.InputEvent.META_MASK));
+        jMenuItemCadNomeSeries.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/movie/1x/baseline_movie_black_18dp.png"))); // NOI18N
+        jMenuItemCadNomeSeries.setMnemonic('c');
+        jMenuItemCadNomeSeries.setText("Nome");
+        jMenuItemCadNomeSeries.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCadNomeSeriesActionPerformed(evt);
+            }
+        });
+        jMenuCadastrar.add(jMenuItemCadNomeSeries);
         jMenuCadastrar.add(jSeparator2);
-
-        jMenuItemCadEpisodios.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_E, java.awt.event.InputEvent.META_MASK));
-        jMenuItemCadEpisodios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/episodios/1x/baseline_play_circle_outline_black_18dp.png"))); // NOI18N
-        jMenuItemCadEpisodios.setText("Episódios");
-        jMenuCadastrar.add(jMenuItemCadEpisodios);
         jMenuCadastrar.add(jSeparator3);
 
         jMenuItemCadGenero.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_G, java.awt.event.InputEvent.META_MASK));
         jMenuItemCadGenero.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/gene/1x/baseline_video_settings_black_18dp.png"))); // NOI18N
         jMenuItemCadGenero.setText("Genero");
+        jMenuItemCadGenero.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemCadGeneroActionPerformed(evt);
+            }
+        });
         jMenuCadastrar.add(jMenuItemCadGenero);
+        jMenuCadastrar.add(jSeparator4);
+
+        jMenuItemClassificacao.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_H, java.awt.event.InputEvent.META_MASK));
+        jMenuItemClassificacao.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/class/1x/sharp_face_black_18dp.png"))); // NOI18N
+        jMenuItemClassificacao.setText("Classificação");
+        jMenuItemClassificacao.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItemClassificacaoActionPerformed(evt);
+            }
+        });
+        jMenuCadastrar.add(jMenuItemClassificacao);
 
         jMenuArquivo.add(jMenuCadastrar);
 
@@ -113,10 +166,31 @@ public class Main extends javax.swing.JFrame {
 
     private void jMenuItemSeriesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemSeriesActionPerformed
         // Criando uma nova tela
-        JIFrameDefault tela = new JIFrameDefault();
+        NotaView tela = new NotaView();
         jDesktop.add(tela);
         tela.setVisible(true);
     }//GEN-LAST:event_jMenuItemSeriesActionPerformed
+
+    private void jMenuItemCadNomeSeriesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadNomeSeriesActionPerformed
+         // Criando uma nova tela
+        NotaView tela = new NotaView();
+        jDesktop.add(tela);
+        tela.setVisible(true);
+    }//GEN-LAST:event_jMenuItemCadNomeSeriesActionPerformed
+
+    private void jMenuItemCadGeneroActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemCadGeneroActionPerformed
+        // Criando uma nova tela
+        GeneroView tela = new GeneroView();
+        jDesktop.add(tela);
+        tela.setVisible(true);
+    }//GEN-LAST:event_jMenuItemCadGeneroActionPerformed
+
+    private void jMenuItemClassificacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItemClassificacaoActionPerformed
+        // Criando uma nova tela
+        ClassificacaoView tela = new ClassificacaoView();
+        jDesktop.add(tela);
+        tela.setVisible(true);
+    }//GEN-LAST:event_jMenuItemClassificacaoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -155,16 +229,20 @@ public class Main extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JDesktopPane jDesktop;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JMenu jMenuArquivo;
     private javax.swing.JMenuBar jMenuBarMenu;
     private javax.swing.JMenu jMenuCadastrar;
-    private javax.swing.JMenuItem jMenuItemCadEpisodios;
     private javax.swing.JMenuItem jMenuItemCadGenero;
-    private javax.swing.JMenuItem jMenuItemCadSeries;
+    private javax.swing.JMenuItem jMenuItemCadNomeSeries;
+    private javax.swing.JMenuItem jMenuItemClassificacao;
     private javax.swing.JMenuItem jMenuItemSeries;
     private javax.swing.JMenu jMenuSobre;
     private javax.swing.JPopupMenu.Separator jSeparator1;
     private javax.swing.JPopupMenu.Separator jSeparator2;
     private javax.swing.JPopupMenu.Separator jSeparator3;
+    private javax.swing.JPopupMenu.Separator jSeparator4;
     // End of variables declaration//GEN-END:variables
 }
