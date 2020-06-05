@@ -38,3 +38,5 @@
 /Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/series/series/obj/Debug/netcoreapp2.2/Razor/Views/Shared/_LayoutAdmin.cshtml.g.cs
 /Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/series/series/obj/Debug/netcoreapp2.2/Razor/Views/Gestao/Generos.cshtml.g.cs
 /Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/series/series/obj/Debug/netcoreapp2.2/Razor/Views/Gestao/NewGenero.cshtml.g.cs
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/series/series/obj/Debug/netcoreapp2.2/Razor/Views/Gestao/Episodios.cshtml.g.cs
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/series/series/obj/Debug/netcoreapp2.2/Razor/Views/Gestao/NewEpisodio.cshtml.g.cs
