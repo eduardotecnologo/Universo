@@ -1,0 +1,12 @@
+@model series.DTO.GeneroDTO
+@{
+  Layout = "_LayoutAdmin";
+}
+<h3>Novo Genero de série</h3>
+<form class="form-horizontal" asp-controller="Generos" asp-action="Save" method="POST">
+  <label asp-for="Name">Digite o nome do Genero:</label>
+  <input type="hidden" asp-for="Id" value="0">
+  <input type="text" asp-for="Name" class="form-control" placeholder="Digite aqui..."><br>
+  <span asp-validation-for="Name"></span>
+  <button class="btn btn-success">Cadastrar</button>
+</form>
