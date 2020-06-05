@@ -12,12 +12,15 @@
     <label asp-for="Name">Digite o número do episódio:</label>
     <input type="number" asp-for="Name" class="form-control" placeholder="Digite aqui..."><br>
 
+
     <label asp-for="Season">Digite o número da Temporada:</label>
-    <input type="number" asp-for="Season" class="form-control" placeholder="Digite aqui..."><br>
+    <input asp-for="Season" class="form-control" placeholder="Digite aqui..."><br>
 
-    <label asp-for="Season">Digite a avaliação do episódio:</label>
-    <input type="text" asp-for="Season" class="form-control" placeholder="Digite aqui..."><br>
 
-    <span asp-validation-for="Name"></span>
+    <label asp-for="Evaluation">Digite a avaliação do episódio:</label>
+    <input asp-for="Evaluation" class="form-control" placeholder="Digite aqui..."><br>
+
+
+
     <button class="btn btn-success">Cadastrar</button>
 </form>

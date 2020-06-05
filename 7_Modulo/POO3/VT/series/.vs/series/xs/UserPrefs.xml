@@ -1,19 +1,27 @@
 ﻿<Properties StartupConfiguration="{D0DDF983-1243-47D7-AA5D-ADB684BAB6C2}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="series/Views/Gestao/NewEpisodio.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="series/Controllers/EpisodiosController.cs">
     <Files>
-      <File FileName="series/Views/Gestao/NewEpisodio.cshtml" Line="22" Column="55" />
+      <File FileName="series/Views/Gestao/NewEpisodio.cshtml" Line="26" Column="8" />
+      <File FileName="series/DTO/GeneroDTO.cs" Line="1" Column="1" />
+      <File FileName="series/DTO/EpisodioDTO.cs" Line="23" Column="2" />
+      <File FileName="series/Controllers/GenerosController.cs" Line="22" Column="30" />
+      <File FileName="series/Views/Gestao/Generos.cshtml" Line="1" Column="1" />
+      <File FileName="series/Views/Gestao/NewGenero.cshtml" Line="12" Column="8" />
+      <File FileName="series/Models/Episodio.cs" Line="9" Column="28" />
+      <File FileName="series/Controllers/EpisodiosController.cs" Line="9" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="series" expanded="True">
             <Node name="series" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="EpisodiosController.cs" selected="True" />
+              </Node>
               <Node name="DTO" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Gestao" expanded="True">
-                  <Node name="NewGenero.cshtml" selected="True" />
-                </Node>
+                <Node name="Gestao" expanded="True" />
                 <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
