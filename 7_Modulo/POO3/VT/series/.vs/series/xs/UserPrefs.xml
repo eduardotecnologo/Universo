@@ -1,11 +1,22 @@
 ﻿<Properties StartupConfiguration="{D0DDF983-1243-47D7-AA5D-ADB684BAB6C2}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="series/Views/Gestao/NewEpisodio.cshtml">
+    <Files>
+      <File FileName="series/Views/Gestao/NewEpisodio.cshtml" Line="22" Column="55" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="series" expanded="True">
             <Node name="series" expanded="True">
-              <Node name="Startup.cs" selected="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="DTO" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Gestao" expanded="True">
+                  <Node name="NewGenero.cshtml" selected="True" />
+                </Node>
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
             </Node>
           </Node>
         </State>
