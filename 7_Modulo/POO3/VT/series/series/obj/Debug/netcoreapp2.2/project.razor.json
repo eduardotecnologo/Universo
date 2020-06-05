@@ -2966,6 +2966,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/series/series/Views/Gestao/Episodios.cshtml",
+      "TargetPath": "Views\\Gestao\\Episodios.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/series/series/Views/Gestao/Generos.cshtml",
       "TargetPath": "Views\\Gestao\\Generos.cshtml",
       "FileKind": "mvc"
@@ -2988,6 +2993,11 @@
     {
       "FilePath": "/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/series/series/Views/Gestao/NewGenero.cshtml",
       "TargetPath": "Views\\Gestao\\NewGenero.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/series/series/Views/Gestao/NewEpisodio.cshtml",
+      "TargetPath": "Views\\Gestao\\NewEpisodio.cshtml",
       "FileKind": "mvc"
     },
     {
