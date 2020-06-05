@@ -18,5 +18,13 @@ namespace series.Controllers
     {
       return View();
     }
+    public IActionResult Episodios()
+    {
+      return View();
+    }
+    public IActionResult NewEpisodio()
+    {
+      return View();
+    }
   }
 }

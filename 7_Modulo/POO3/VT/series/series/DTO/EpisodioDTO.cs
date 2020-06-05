@@ -5,7 +5,7 @@ namespace series.DTO
   public class EpisodioDTO
   {
     [Required]
-    public int id { get; set; }
+    public int Id { get; set; }
 
     [Required(ErrorMessage = "Ops! O nome do Episódio é Obrigatório.")]
     [StringLength(50, ErrorMessage = "Ops! Nome do Episódio está muito grande, tente um nome menor.")]
