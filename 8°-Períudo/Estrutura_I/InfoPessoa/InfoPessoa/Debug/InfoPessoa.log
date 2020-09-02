@@ -1,0 +1,15 @@
+﻿  InfoPessoa.cpp
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(18,13): warning C4473: 'scanf_s' : not enough arguments passed for format string
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(18,13): message : placeholders and their parameters expect 2 variadic arguments, but 1 were provided
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(18,13): message : the missing variadic argument 2 is required by format string '%c'
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(18,13): message : this argument is used as a buffer size
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(20,5): error C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(14,20): warning C4101: 'telefone': unreferenced local variable
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(15,18): warning C4101: 'altura': unreferenced local variable
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(14,9): warning C4101: 'idades': unreferenced local variable
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(13,46): warning C4101: 'estado': unreferenced local variable
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(15,12): warning C4101: 'peso': unreferenced local variable
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(13,38): warning C4101: 'cidade': unreferenced local variable
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(14,16): warning C4101: 'cep': unreferenced local variable
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(13,33): warning C4101: 'rua': unreferenced local variable
+C:\Users\eduar\Google Drive\Universo\8°-Períudo\Estrutura_I\InfoPessoa\InfoPessoa\InfoPessoa.cpp(13,22): warning C4101: 'profissao': unreferenced local variable
