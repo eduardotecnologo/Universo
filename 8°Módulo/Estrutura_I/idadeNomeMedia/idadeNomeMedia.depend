@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1600401115 source:c:\users\eduar\documents\git\universo\8°módulo\estrutura_i\idadenomemedia\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
