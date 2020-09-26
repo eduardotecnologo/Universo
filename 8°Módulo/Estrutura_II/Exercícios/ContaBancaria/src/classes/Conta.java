@@ -1,6 +1,6 @@
 package classes;
 
-public class Conta {
+public abstract class Conta {
 	protected Cliente titular;
 	protected double saldo;
 
