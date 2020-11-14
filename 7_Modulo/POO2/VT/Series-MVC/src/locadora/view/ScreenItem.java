@@ -70,7 +70,7 @@ public class ScreenItem extends javax.swing.JFrame {
         jLabelTituloPreco.setText("Preço:");
 
         jTextFieldPreco.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
-        jTextFieldPreco.setText("jTextField1");
+        jTextFieldPreco.setText("0,00");
 
         jButtonConsultar.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
         jButtonConsultar.setText("Consultar");

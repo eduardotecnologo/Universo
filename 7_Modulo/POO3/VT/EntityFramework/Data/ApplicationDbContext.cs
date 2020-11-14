@@ -1,16 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using EntityFramework.Models;
 
-namespace EntityFramework.Data
+namespace EntityFramework.Database
 {
-    public class ApplicationDbContext : IdentityDbContext
+  public class ApplicationDBContext : DbContext
+  {
+    DbSet<Funcionario> Funcionarios;
+    public ApplicationDBContext(DbContextOptions<ApplicationDBContext> options) : base(options)
     {
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
-            : base(options)
-        {
-        }
+
     }
+  }
 }

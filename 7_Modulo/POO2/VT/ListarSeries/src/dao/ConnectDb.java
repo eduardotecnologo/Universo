@@ -18,7 +18,6 @@ public class ConnectDb {
     private static final String user = "root";
     private static final String pass = "root";
     
-    
     // Método para conexão   
     public static Connection openConnect() throws SQLException, ClassNotFoundException{
         Connection con = null;

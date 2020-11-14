@@ -1,0 +1,12 @@
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/bin/Debug/netcoreapp3.1/teste.deps.json
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/bin/Debug/netcoreapp3.1/teste.runtimeconfig.json
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/bin/Debug/netcoreapp3.1/teste.runtimeconfig.dev.json
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/bin/Debug/netcoreapp3.1/teste.dll
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/bin/Debug/netcoreapp3.1/teste.pdb
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/obj/Debug/netcoreapp3.1/teste.csprojAssemblyReference.cache
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/obj/Debug/netcoreapp3.1/teste.AssemblyInfoInputs.cache
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/obj/Debug/netcoreapp3.1/teste.AssemblyInfo.cs
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/obj/Debug/netcoreapp3.1/teste.csproj.CoreCompileInputs.cache
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/obj/Debug/netcoreapp3.1/teste.dll
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/obj/Debug/netcoreapp3.1/teste.pdb
+/Users/edudeveloper/Documents/Git/Universo/7_Modulo/POO3/VT/teste/obj/Debug/netcoreapp3.1/teste.genruntimeconfig.cache
