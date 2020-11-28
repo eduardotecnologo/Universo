@@ -1,0 +1,26 @@
+﻿<Properties StartupConfiguration="{FF529044-6951-40DE-B0A5-90A48B9230F6}|">
+  <MonoDevelop.Ide.ItemProperties.testeSeries FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome Canary.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="testeSeries/packages.config">
+    <Files>
+      <File FileName="testeSeries/Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="testeSeries/packages.config" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="testeSeries" expanded="True">
+            <Node name="testeSeries" expanded="True">
+              <Node name="Views" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

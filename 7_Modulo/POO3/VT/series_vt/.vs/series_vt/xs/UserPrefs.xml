@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{E4B74D8D-DC63-455E-AF95-CE23F722FA19}|">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="series_vt" expanded="True" selected="True">
+            <Node name="series_vt" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.series__vt.Tests FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.series__vt FirstBuild="True" PreferredExecutionTarget="/Applications/Google Chrome Canary.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
